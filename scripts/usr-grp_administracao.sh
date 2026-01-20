@@ -21,4 +21,8 @@ case $1 in
       sudo groupdel "$group"
    done
     ;;
+   *)
+   echo "Uso: $0 {list|mine|add|del} [grupos]"
+      exit 1
+   ;;
 esac
